@@ -1,11 +1,28 @@
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 50px;
 }
 title {
     font-family: Arial, Helvetica, sans-serif;
     
 }
 
-.a1{
-    margin-left: 20px;
+.body{
+    background-color: #F7B401;
 }
+
+
+div.img{
+    margin: auto;
+    position: fixed;
+    right: 250px;
+    bottom: 250px;
+
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
