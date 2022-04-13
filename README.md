@@ -11,3 +11,7 @@ et semestral
 - Constanza: Crear "quienes somos" 
 - Zenon: Crear "INDEX"b   
 >>>>>>> Calambrito
+------FORMULARIO-----
+-Zenon: Crear Cuenta
+-Constanza: Perfil usuario
+-Mattias: Login cliente, olvidar contraseña
