@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create session</title>
     <link rel="stylesheet" href="css/diseño.css">
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,15 +42,15 @@
       
       <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 p-3 border mt-3 rounded shadow bodydos">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 p-3 border mt-3 rounded shadow bodydos">
                 <form action="registro.html" method="get">
                     <h4>Crear Usuario</h4>
                       <div>
                           <img src="img/add_user_profile_person_avatar_icon_196535.png" alt="Avatar" class="avatar">
                       </div>
 
-                      <div class="mb-3 mt-3">
+                      <div class="mb-3 mt-1">
                         <label for="nombre" class="form-label">Nombre de Usuario</label>
                         <input type="text" class="form-control" id="nom" name="nombre" placeholder="Ingrese nombre" required>
                       </div>
@@ -65,7 +65,7 @@
                         <input type="password" class="form-control" id="psw" name="pass" placeholder="ingrese password" required>
                       </div>
 
-                      <div class="mb-3 mt-3">
+                      <div class="mb-1 mt-1">
                         <label for="edad" class="form-label">Edad</label>
                         <input type="number" max="120" min="1" class="form-control" id="nom" name="edad" placeholder="Ingrese edad" required>
                       </div>
@@ -74,13 +74,34 @@
                         <label for="mail" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
                       </div>
+
+                      <div class="mb-3 mt-3">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="Direcciont" class="form-control" id="direcc" name="direccion" placeholder="Direccion" required>
+                      </div>
+
+                      <div class="mb-3 mt-2">
+                        <label for="direccion" class="form-label">codigo Postal</label>
+                        <input type="text" class="form-control" id="codigoPost" name="codigo Postal" placeholder="Codigo postal" required>
+                      </div>
                       
 
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="check1" name="covid">
                         <label class="form-check-label">
-                            <a href="registro.html">acpeta los terminos de uso</a>
+                            <a href="#">Aceptar Términos de Uso</a>
                         </label>  
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="check1" name="covid">
+                        <label class="form-check-label">
+                            <a href="#">Acepta las normas de la empresa</a>
+                        </label>  
+                      </div>
+
+                      <div class="mt-4">
+                        <input type="submit" value="Crear Usuario" class="btn btn-success btn-md">
                       </div>
     
                 </form>  
