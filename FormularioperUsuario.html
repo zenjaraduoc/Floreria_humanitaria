@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Perfil Usuario</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="float: right;">
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="floreria.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="formularioperUsuario.html"> Perfil Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 p-3 border mt-3 rounded shadow">
+                <form action="registro.html" method="get">
+                    <img src="img/avatar.png" alt="Avatar" class="responsive" >
+                    <h4>Registro de Usuario</h4>
+                    <div class="mb-3 mt-3">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="direccion" class="form-control" id="nom" name="ape" placeholder="Direccion">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nom" name="nombre" placeholder="Ingrese nombre"
+                            required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="ape" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="nom" name="ape" placeholder="Ingrese apellido"
+                            required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="mail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="telefono" class="form-label"> Telefono </label>
+                        <input type="telefono" class="form-control" id="nom" name="telefono" placeholder=" Telefono " required>
+
+
+                        
+                    </div>
+                
+
+
+
+                    <div class="mb-3 mt-3">
+                        <p>Sexo</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="sex" value="f"
+                                checked>Femenino
+                            <label class="form-check-label" for="sex"></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio1" name="sex" value="m">Masculino
+                            <label class="form-check-label" for="sex"></label>
+                        </div>
+
+
+                </form>
+
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+</body>
+
+</html>
