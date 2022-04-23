@@ -47,12 +47,19 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8 p-3 border mt-3 rounded shadow">
-                <form action="registro.html" method="get">
-                    <img src="img/avatar.png" alt="Avatar" class="responsive">
-                    <h4>Registro de Usuario</h4>
+                <form action="FormularioperUsuario.html" method="get">
+                    <img src="img/avatar.png" alt="Avatar" class="mx-auto d-block">
+                    <p>  </p>
+                    <h4>Perfil del Usuario</h4>
                     <div class="mb-3 mt-3">
                         <label for="direccion" class="form-label">Direccion</label>
                         <input type="direccion" class="form-control" id="nom" name="ape" placeholder="Direccion">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="codigo postal" class="form-label"> Codigo Postal</label>
+                        <input type="Codigo" class="form-control" id="nom" name="Codigo" placeholder="Codigo Postal"
+                            required>
+
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="nombre" class="form-label">Nombre</label>
@@ -74,25 +81,37 @@
                         <input type="telefono" class="form-control" id="nom" name="telefono" placeholder=" Telefono "
                             required>
 
+                        <div class="mb-3 mt-3">
+                            <label for="telefono" class="form-label"> Constraseña </label>
+                            <input type="telefono" class="form-control" id="nom" name="telefono"
+                                placeholder=" Constraseña " required>
+                            <label for="telefono" class="form-label"> ¿Cambiar contraseña? </label>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="telefono" class="form-label"> Codigo promocional </label>
+                        <input type="telefono" class="form-control" id="nom" name="telefono"
+                            placeholder=" Ingrese codigo " required>
+
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <p> Estado de Suscripción</p>
+                        <select class="form-select">
+                            <option> Elegir opcion</option>
+                            <option> Activa </option>
+                            <option> Inactiva </option>
+                            <option> Deshabilitada </option>
+                        </select>
+                        <label for="telefono" class="form-label"> ¿Quieres configurar el método de pago de suscripción?
+                        </label>
 
 
                     </div>
 
 
-
-
-                    <div class="mb-3 mt-3">
-                        <p>Sexo</p>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="sex" value="f"
-                                checked>Femenino
-                            <label class="form-check-label" for="sex"></label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="radio1" name="sex" value="m">Masculino
-                            <label class="form-check-label" for="sex"></label>
-                        </div>
-
+                    <button type="button" class="btn btn-dark center-block">Gaurdar Cambios</button>
 
                 </form>
 
