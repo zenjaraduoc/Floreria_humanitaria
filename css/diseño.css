@@ -43,9 +43,10 @@ input[type=email] {
     box-sizing: border-box;
 }
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 575px) {
     span.psw {
         display: block;
         float: none;
-    }}
+
+    }
+}
