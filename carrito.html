@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historai Especifico</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="css/diseño.css">
-    <link rel="stylesheet" href="css/diseno_card">
+    <link rel="stylesheet" href="css/diseñocard.css">
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
@@ -15,7 +15,6 @@
 </head>
 
 <body class="body">
-
     <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -40,28 +39,43 @@
         </div>
     </nav>
 
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="row">
-            <div class=""></div>
-            <div class="col-sm-5 mx-auto mt-5 p-5 bodydos border rounded shadow">
-                <img src="img/macetas-plantas-interior-suculentas-Madera2Breciclada252C2BBiopl25C325A1stico2B32B1200px.jpg"
-                    style="width: 20%; height: 30%;" alt="">
-                <div class="mt-5">
-                    <p class="venta">total: </p>
-                    <p class="venta">codigo de compra:</p>
-                </div>
-                <div class="col-sm-2 mb-3 mt-3">
-                    <label for="cantidad" class="form-label">Cantidad</label>
-                    <input type="number" max="120" min="1" class="form-control" id="cant" name="Cantidad" placeholder=""
-                        required>
-                </div>
-
-                <div class="mx-auto linkse mt-3">
-                    <button class="btn btn-danger" onclick="return detalle();">Ver detalle</button>
+            <div class="">
+                <div class="col-sm-5 mx-auto mt-5 p-lg-4 bodydos border rounded shadow ">
+                    <img class="card-img-top" src="img/como_cuidar_la_planta_de_romero_en_maceta_1293_orig.jpg"
+                        style="width: 25%; height: 50%;" alt="venta1">
+                    <p class="venta mt-1"> Nombre Planta: </p>
+                    <p class="venta">Precio planta: </p>
+                    <div class="col-sm-2 mb-3 mt-3">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" max="120" min="1" class="form-control" id="cant" name="Cantidad"
+                            placeholder="" required>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 mx-auto bodydos mt-5 border rounded shadow">
+                <br>
+                <p class="venta">precio neto:</p>
+                <p class="venta">descuento por subcripcion:</p>
+                <p class="venta">Decuento por oferta:</p>
+                <p class="venta">total al paga:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto linkse mt-4">
+        <button class="btn btn-danger col-sm-2" onclick="return Compara();">Comprar</button>
+    </div>
+
+
 
 </body>
 

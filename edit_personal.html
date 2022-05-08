@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar CLiente/trabajador</title>
+    <link rel="stylesheet" href="css/diseño.css">
+    <link rel="stylesheet" href="css/diseñocard.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="float: right;">
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="floreria.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 p-5 border mt-3 rounded shadow bodydos">
+                <form action="edit_personal.html" method="get">
+                    <h4>Editar Cliente/trabajador </h4>
+
+                    <div>
+                        <img src="img/add_user_profile_person_avatar_icon_196535.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="mb-3 mt-md-3 ">
+                        <label for="nombre" class="form-label">Nombre de Usuario</label>
+                        <input type="text" class="form-control" id="nom" name="nombre" placeholder="nombre" required>
+                    </div>
+
+                    <div class="mb-3 mt-3  ">
+                        <label for="aplle" class="form-label">apellido</label>
+                        <input type="text" class="form-control" id="aplle" name="aplle" placeholder="apellido" required>
+                    </div>
+
+                    <div class="mb-3 mt-3 ">
+                        <label for="cell" class="form-label">telefono</label>
+                        <input type="text" class="form-control" id="cell" name="cell" placeholder=" celular" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="mail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="Direcciont" class="form-control" id="direcc" name="direccion"
+                            placeholder="Direccion" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="direccion" class="form-label">codigo Postal</label>
+                        <input type="text" class="form-control" id="codigoPost" name="codigo Postal"
+                            placeholder="Codigo postal" required>
+                    </div>
+
+                    <div class="container-fluid mb-3 mt-3 col-sm-4">
+                        <label for="comuna" class="form-label">Tipo de Persona</label>
+                        <select class="form-select" name="comuna">
+                            <option>Trabajador</option>
+                            <option>Cliente</option>
+
+                        </select>
+                    </div>
+
+                    <div class="container-fluid mb-3 mt-3 col-sm-4">
+                        <label for="comuna" class="form-label">Estado de suscripción</label>
+                        <select class="form-select" name="comuna">
+                            <option>Desactivado</option>
+                            <option>Activado</option>
+                        </select>
+                    </div>
+
+                    <button class="btn bg-info mt-3"><i class="fa fa-trash"></i> Eliminar</button>
+
+                    <div class="mt-4">
+                        <input type="submit" value="Guardar Cambios" onclick="validar()" name="btnvalidar"
+                            id="btnvalidar" class="btn btn-success btn-md">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
