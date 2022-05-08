@@ -34,6 +34,7 @@ p {
 }
 .text_center{
   text-align: center;
+  margin: 100px;
 }
 
 .margen {
@@ -92,7 +93,13 @@ p {
     max-width: 50%;
   }
 }
-
+.borde{
+  margin: 60px;
+}
+.pago{
+  background-color: #fac638;
+  margin: 10px;
+}
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column {
