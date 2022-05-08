@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leer o Eliminar Productos</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="ssc/miestilo.css">
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="float: right;">
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="floreria.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item" style="float: right;">
+                        <a class="nav-link" href="formularioperUsuario.html"> Perfil Usuario</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fondo2 justify-content-between ">
+
+        <div class="row">
+            <form method="get" id="searchform">
+                <label for="s" class="assistive-text">Buscar</label>
+                <input type="search" class="txt-search" placeholder="Buscar..." name="s" id="s">
+                <input type="submit" name="submit" id="btn-search-n" value="Buscar">
+            </form>
+
+            <div class="p-4">
+                <select class="form-select">
+                    <option>Filtro</option>
+                    <option> Nombre Producto</option>
+                    <option> Codigo producto </option>
+                    <option> Precio Menor a Mayor </option>
+                    <option> Precio Mayor a Menor </option>
+                </select>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="column ">
+                <img src="img/carrito.png" alt="Snow" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" alt="Forest" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="column">
+                <img src="img/carrito.png" style="width:80%">
+                <p2>Nombre producto:................</p2>
+                <p></p>
+                <p2>Precio: $XX.XXX.XXX</p2>
+                <p></p>
+                <p2>Codigo de producto: ........</p2>
+                <p2> Cantidad Restante</p2>
+                <select class="form-select">
+                    <option> Elegir opcion</option>
+                    <option> 1 </option>
+                    <option> 2 </option>
+                    <option> 3 </option>
+                    <option> 4 </option>
+                    <option> 5 </option>
+                    <option> 6 </option>
+                    <option> 7 </option>
+                    <option> 8 </option>
+                    <option> 9 </option>
+                    <option> 10 </option>
+                    <option> + 10 </option>
+                </select>
+                <p></p>
+                </span><button onclick="document.getElementById('id01').style.display='block'">
+                    Borrar</button>
+
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Borrar">&times;</span>
+                    <form class="modal-content" action="/action_page.php">
+                        <div class="container">
+                            <h1>Eliminar</h1>
+                            <p>Seguro que quieres borrar?</p>
+
+                            <div class="clearfix">
+                                <button type="button" class="cancelbtn">Cancel</button>
+                                <button type="button" class="deletebtn">OK</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
