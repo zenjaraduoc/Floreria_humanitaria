@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">  
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/diseñomatti.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="ssc/miestilo.css">
+  <link rel="stylesheet" href="css/diseñoiconos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/navbar.js"></script>
+    <title>Login Trabajador</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+  <div id="sideNavigation" class="sidenav">
+    <a class="navbar-brand" href="Floreria_humanitaria.html">
+      <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+    </a>
+    <input type="text" placeholder="Buscar...">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="floreria.html">¿Quienes Somos?</a>
+    <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Perfil
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Configuración de Perfil</a>
+      <a href="#">Cerrar Sesión</a>
+    </div>
+    </div>
+    <a href="#">Volver al Menu de Gestión</a>
+    <a href="#">Contactanos</a>
+    <a href="logincliente.html">Entrar Como Cliente</a>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </div>
+  <nav class="topnav">
+    <a href="#" onclick="openNav()">
+      <svg width="30" height="30" id="icoOpen">
+        <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+        <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+        <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+      </svg>
+    </a>
+  </nav>
+
+
+<form action="/action_page.php" method="post">
+  <div class="text-center texto" style="background-color:#02ce31;width: 20%; margin-left: 40%;">
+    TRABAJADORES
+  </div>
+    <div class="logo">
+    <img src="img/logo.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>E-mail</b></label>
+    <input type="text" placeholder="Ingrese E-mail" name="uname" required>
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
+        
+    <button type="submit">Iniciar Sesión</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Recuerdame
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#fac638">
+    <class="psw"> <a href="olvidecontra.html">¿Olvidaste La Contraseña?</a></class=>
+    <br>
+    <class="psw"> <a href="logincliente.html">¿Quieres entrar como cliente?</a></class=>
+    <br>
+  </div>
+</form>
+</body>
+</html>

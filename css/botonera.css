@@ -1,0 +1,36 @@
+.button {
+    background-color: #36cd0c;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px;
+    float: left
+}
+
+.small-btn {
+    width: 50px;
+    height: 25px;
+}
+
+.medium-btn {
+    width: 20%;
+    height: 50px;
+    background-color: #cd0c0c;
+    float: right;
+    margin-right: 20px;
+}
+
+.big-btn {
+    width: 40%;
+    height: 20%;
+    background-color: #cd0c0c;
+    margin:10px;
+}
+.big-btncenter {
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #cd0c0c;
+}

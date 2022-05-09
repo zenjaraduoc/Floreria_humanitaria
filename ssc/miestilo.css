@@ -1,50 +1,207 @@
 .fondo {
-  background-color: #F7B401;
-  }
-  
+  background-color: #ddff04;
+}
+
+.fondo2 {
+  background-color: #fac638;
+  margin: 40px;
+}
+
+.fondo3 {
+  background-color: #4a90e0;
+}
+
 h1 {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: left;
-  }
-  
+  font-family:Arial, Helvetica, sans-serif ;
+
+}
+
 p {
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   border-right: 15px;
+  text-align: left ;
 
-  }
+}
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border-right: 15px;
+  text-align: left ;
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+}
+.text_center{
+  text-align: center;
+  margin: 100px;
+}
+
+.margen {
+  font-size: medium;
+  display: flex;
+  border: #68e04a;
+
+}
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid rgb(187, 28, 11); 
+  margin: auto;
+}
+
+.center {
+  margin: auto;
+  position: relative;
+  top:auto;
+  left: auto;
+
+}
+
+.btn {
+  bottom: unset;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding:  20px;
+  margin: auto;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px;
+  margin: 10px;
+  border: #534317 solid;
+}
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 0px;
-    vertical-align: middle;
+}
+.borde{
+  margin: 60px;
+}
+.pago{
+  background-color: #fac638;
+  margin: 10px;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+* {box-sizing: border-box}
+
+/* Set a style for all buttons */
+button {
+  background-color: #000000;
+  color: white;
+  padding: 1px;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.OKbtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
     width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 500px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create session</title>
+  <link rel="stylesheet" href="css/diseño.css">
+  <link rel="stylesheet" href="css/diseñocard.css">
+  <link rel="stylesheet" href="css/nabar.css">
+  <script src="js/Nabar.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body">
+  <div id="sideNavigation" class="sidenav">
+    <a class="navbar-brand" href="Floreria_humanitaria.html">
+        <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+    </a>
+    <input type="text" placeholder="Buscar...">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="floreria.html">¿Quienes Somos?</a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Perfil
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">Configuración de Perfil</a>
+            <a href="#">Estado de suscripción</a>
+            <a href="#">Historial de compras</a>
+            <a href="#">Cerrar Sesión</a>
+        </div>
+    </div>
+    <a href="#">Productos</a>
+    <a href="#">Contactanos</a>
+    <a href="logintrabajador.html">Entrar Como Trabajador</a>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+<nav class="topnav">
+    <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+        </svg>
+    </a>
+</nav>
+
+
+
+
+
+  <div class="container-fluid ">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 p-5 border mt-3 rounded shadow bodydos">
+        <form action="create_session.html" method="get">
+          <h4>Crear Usuario</h4>
+          <div>
+            <img src="img/add_user_profile_person_avatar_icon_196535.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="mb-3 mt-md-3 ">
+            <label for="nombre" class="form-label">Nombre de Usuario</label>
+            <input type="text" class="form-control" id="nom" name="nombre" placeholder="Ingrese nombre" required>
+          </div>
+
+          <div class="mb-3 mt-3  ">
+            <label for="pass" class="form-label">Crear contraseña</label>
+            <input type="password" class="form-control" id="psw" name="pass" placeholder="ingrese password" required>
+          </div>
+
+          <div class="mb-3 mt-3 ">
+            <label for="pass" class="form-label">Verificar contraseña</label>
+            <input type="password" class="form-control" id="psw" name="pass" placeholder="verificar password" required>
+          </div>
+
+          <div class="mb-3 mt-3 ">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" max="120" min="1" class="form-control" id="nom" name="edad" placeholder="Ingrese edad"
+              required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="mail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="direccion" class="form-label">Direccion</label>
+            <input type="Direcciont" class="form-control" id="direcc" name="direccion" placeholder="Direccion" required>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="direccion" class="form-label">codigo Postal</label>
+            <input type="text" class="form-control" id="codigoPost" name="codigo Postal" placeholder="Codigo postal"
+              required>
+          </div>
+
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="covid">
+            <label class="form-check-label">
+              <a href="#">Aceptar Términos de Uso</a>
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="covid">
+            <label class="form-check-label">
+              <a href="#">Acepta las normas de la empresa</a>
+            </label>
+          </div>
+
+          <div class="mt-4">
+            <input type="submit" value="Crear Usuario" class="btn btn-success btn-md">
+          </div>
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
