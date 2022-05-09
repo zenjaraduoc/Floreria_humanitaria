@@ -1,0 +1,66 @@
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.venta {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+title {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.body {
+    background-color: #ddff04;
+    width: 100%;
+    max-height: fit-content;
+}
+
+<<<<<<< HEAD:css/diseño.css
+.bodydos {
+    background-color: #fac638;
+=======
+.body{
+    background-color: #ddff04;
+>>>>>>> Calambritoo:css/diseño55554.css
+}
+
+.bodyverde {
+    background-color: #8FD14F;
+}
+
+.linkse {
+    text-align: center;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=Direcciont] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 575px) {
+    span.psw {
+        display: block;
+        float: none;
+
+    }
+}
