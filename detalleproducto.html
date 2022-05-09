@@ -2,25 +2,26 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETALLE PRODUCTO</title>
-    <link rel="stylesheet" href="css/diseño.css">
-    <link rel="stylesheet" href="css/diseñocard.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/diseñomatti.css">
-    <link rel="stylesheet" href="css/botonera.css">
-    <script src="js/Navbar.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETALLE PRODUCTO</title>
+  <link rel="stylesheet" href="css/diseño.css">
+  <link rel="stylesheet" href="css/diseñocard.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/diseñomatti.css">
+  <link rel="stylesheet" href="css/botonera.css">
+  <script src="js/Navbar.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+
   <body style="background-color:#ddff04;"></body>
-<div id="sideNavigation" class="sidenav">
+  <div id="sideNavigation" class="sidenav">
     <a class="navbar-brand" href="Floreria_humanitaria.html">
       <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
     </a>
@@ -28,17 +29,17 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="floreria.html">¿Quienes Somos?</a>
     <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction()">Perfil
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content" id="myDropdown">
-      <a href="#">Configuración de Perfil</a>
-      <a href="#">Estado de suscripción</a>
-      <a href="#">Historial de compras</a>
-      <a href="#">Cerrar Sesión</a>
+      <button class="dropbtn" onclick="myFunction()">Perfil
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="edit_personal.html">Configuración de Perfil</a>
+        <a href="PagoSuscripcion.html">Estado de suscripción</a>
+        <a href="HistorialdeCompras.html">Historial de compras</a>
+        <a href="#">Cerrar Sesión</a>
+      </div>
     </div>
-    </div>
-    <a href="#">Productos</a>
+    <a href="catalogo.html">Productos</a>
     <a href="#">Contactanos</a>
     <a href="logintrabajador.html">Entrar Como Trabajador</a>
     <a href="#" class="fa fa-facebook"></a>
@@ -54,38 +55,40 @@
       </svg>
     </a>
   </nav>
-        <div class="d-flex justify-content-center" style="background-color:#fac638; margin-left: 20%; margin-right: 20%;">
-            <div class="row ">
-                <div class="column">
-                    <a>NOMBRE DE PRODUCTO:</a>
-                    <br>
-                    <a>PRECIO:</a>
-                    <div class="container" style="background-color:white;">
-                    <img src="img/Planta.png" alt="Snow" style="width:100%">
-                     </div>
-                    <br>
-                    <p2>Codigo Restante: 6</p2>
-                    <p></p>
-                    <p2> Cantidad DESEADA</p2>
-                    <select class="form-select">
-                        <option> Elegir opcion</option>
-                        <option> 1 </option>
-                        <option> 2 </option>
-                        <option> 3 </option>
-                        <option> 4 </option>
-                        <option> 5 </option>
-                        <option> 6 </option>
-                        <option> 7 </option>
-                        <option> 8 </option>
-                        <option> 9 </option>
-                        <option> 10 </option>
-                        <option> + 10 </option>
-                    </select>
-                    <p></p>
-                </div>
-            </div>
-            
+  <div class="d-flex justify-content-center" style="background-color:#fac638; margin-left: 20%; margin-right: 20%;">
+    <div class="row ">
+      <div class="column">
+        <a>NOMBRE DE PRODUCTO:</a>
+        <br>
+        <a>PRECIO:</a>
+        <div class="container" style="background-color:white;">
+          <img src="img/Planta.png" alt="Snow" style="width:100%">
         </div>
-        <button type="submit" class="d-flex justify-content-center" style="background-color: red;">AÑADIR A CARRITO DE COMPRAS</button>
-      </body>
-      </html>
+        <br>
+        <p2>Codigo Restante: 6</p2>
+        <p></p>
+        <p2> Cantidad DESEADA</p2>
+        <select class="form-select">
+          <option> Elegir opcion</option>
+          <option> 1 </option>
+          <option> 2 </option>
+          <option> 3 </option>
+          <option> 4 </option>
+          <option> 5 </option>
+          <option> 6 </option>
+          <option> 7 </option>
+          <option> 8 </option>
+          <option> 9 </option>
+          <option> 10 </option>
+          <option> + 10 </option>
+        </select>
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+  <a href="carrito.html" type="button" class="btn btn-dark center-block">AÑADIR A CARRITO DE
+    COMPRAS</button>
+</body>
+
+</html>
