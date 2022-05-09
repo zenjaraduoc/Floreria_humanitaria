@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/diseño.css">
+    <link rel="stylesheet" href="css/diseñocard.css">
+    <link rel="stylesheet" href="css/nabar.css">
+    <script src="js/Nabar.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="ssc/miestilo2.css" rel="stylesheet">
-
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="ssc/miestilo.css">
-    <script src="js/narvar23.js"></script>
 </head>
 
-<body class="fondo">
+<body class="body">
     <div id="sideNavigation" class="sidenav">
         <a class="navbar-brand" href="Floreria_humanitaria.html">
             <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
@@ -53,32 +52,44 @@
         </a>
     </nav>
 
-    <h1 style="color: black; text-align: justify; text-align: center;">Quienes somos</h1>
-    <p class="text-center">Somos una institución que a estado 10 años en el rubro de florería,
-        teniendo los mejores productos, contando con un invernadero donde se cosechando todos los productos,
-        también contamos con una extendida variedad de flores.</p>
 
-    <div class="row">
-        <div class="column">
-            <img src="img/fto floreria.jpeg">
-
-        </div>
-
-        <div class="column">
-            <img src="img/flores.png">
-
-        </div>
-
-        <div class="column">
-            <img src="img/foto flores.png">
-
-        </div>
-
-        <div class="column">
-            <img src="img/fto3.png">
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="col-sm-5 mx-auto mt-5 p-lg-4 bodydos border rounded shadow ">
+                    <img class="card-img-top" src="img/como_cuidar_la_planta_de_romero_en_maceta_1293_orig.jpg"
+                        style="width: 25%; height: 50%;" alt="venta1">
+                    <p class="venta mt-1"> Nombre Planta: </p>
+                    <p class="venta">Precio planta: </p>
+                    <div class="col-sm-2 mb-3 mt-3">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="number" max="120" min="1" class="form-control" id="cant" name="Cantidad"
+                            placeholder="" required>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 mx-auto bodydos mt-5 border rounded shadow">
+                <br>
+                <p class="venta">precio neto:</p>
+                <p class="venta">descuento por subcripcion:</p>
+                <p class="venta">Decuento por oferta:</p>
+                <p class="venta">total al paga:</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto linkse mt-4">
+        <button class="btn btn-danger col-sm-2" onclick="return Compara();">Comprar</button>
+    </div>
+
+
 
 </body>
 

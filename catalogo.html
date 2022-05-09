@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="css/diseño.css">
+    <link rel="stylesheet" href="css/diseñocard.css">
+    <link rel="stylesheet" href="css/nabar.css">
+    <script src="js/Nabar.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="body">
+    <div id="sideNavigation" class="sidenav">
+        <a class="navbar-brand" href="Floreria_humanitaria.html">
+            <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+        </a>
+        <input type="text" placeholder="Buscar...">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="floreria.html">¿Quienes Somos?</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Perfil
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Configuración de Perfil</a>
+                <a href="#">Estado de suscripción</a>
+                <a href="#">Historial de compras</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+        <a href="#">Productos</a>
+        <a href="#">Contactanos</a>
+        <a href="logintrabajador.html">Entrar Como Trabajador</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <nav class="topnav">
+        <a href="#" onclick="openNav()">
+            <svg width="30" height="30" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+            </svg>
+        </a>
+    </nav>
+
+<h2>Calatogo Productos</h2>
+
+    <div class="row container-fluid">
+        <div class="container-fluid mt-3 col-sm-4 p-3">
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        </div>
+        <div class="container-fluid mb-3 mt-3 col-sm-4">
+            <label for="comuna" class="form-label">Filtro</label>
+            <select class="form-select" name="comuna">
+                <option>Nombre Producto</option>
+                <option>Codigo produto</option>
+                <option selected>Precio Mayor a Menor</option>
+                <option>Precio Menor a Mayor </option>
+            </select>
+        </div>
+    
+    
+        <div class="row container-fluid p-5 column">
+            <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
+                <img src="img/fto3.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/flores.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
+                <img src="img/flores.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/macetas-plantas-interior-suculentas-Madera2Breciclada252C2BBiopl25C325A1stico2B32B1200px.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/venta 4.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/fto floreria.jpeg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/macetas-plantas-interior-suculentas-Madera2Breciclada252C2BBiopl25C325A1stico2B32B1200px.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+            <br>
+            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+                <img src="img/Planta.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
