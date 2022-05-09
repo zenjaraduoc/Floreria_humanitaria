@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="ssc/miestilo2.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="ssc/miestilo.css">
+    <script src="js/narvar23.js"></script>
+</head>
+
+<body class="fondo">
+    <div id="sideNavigation" class="sidenav">
+        <a class="navbar-brand" href="Floreria_humanitaria.html">
+            <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+        </a>
+        <input type="text" placeholder="Buscar...">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="floreria.html">¿Quienes Somos?</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Perfil
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Configuración de Perfil</a>
+                <a href="#">Estado de suscripción</a>
+                <a href="#">Historial de compras</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+        <a href="#">Productos</a>
+        <a href="#">Contactanos</a>
+        <a href="logintrabajador.html">Entrar Como Trabajador</a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <nav class="topnav">
+        <a href="#" onclick="openNav()">
+            <svg width="30" height="30" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+            </svg>
+        </a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class=" fondo2  col-sm-8 p-3 border mt-3 rounded shadow">
+                <form action="FormularioperUsuario.html" method="get">
+                    <img src="img/avatar.png" alt="Avatar" class="mx-auto d-block">
+                    <p> </p>
+                    <h4>Perfil del Usuario</h4>
+                    <div class="mb-3 mt-3">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="direccion" class="form-control" id="nom" name="ape" placeholder="Direccion">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="codigo postal" class="form-label"> Codigo Postal</label>
+                        <input type="Codigo" class="form-control" id="nom" name="Codigo" placeholder="Codigo Postal"
+                            required>
+
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nom" name="nombre" placeholder="Ingrese nombre"
+                            required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="ape" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="nom" name="ape" placeholder="Ingrese apellido"
+                            required>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="mail" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="nom" name="mail" placeholder="E-mail" required>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="telefono" class="form-label"> Telefono </label>
+                        <input type="telefono" class="form-control" id="nom" name="telefono" placeholder=" Telefono "
+                            required>
+
+                        <div class="mb-3 mt-3">
+                            <label for="telefono" class="form-label"> Constraseña </label>
+                            <input type="telefono" class="form-control" id="nom" name="telefono"
+                                placeholder=" Constraseña " required>
+                            <label for="telefono" class="form-label"> ¿Cambiar contraseña? </label>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="telefono" class="form-label"> Codigo promocional </label>
+                        <input type="telefono" class="form-control" id="nom" name="telefono"
+                            placeholder=" Ingrese codigo " required>
+
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <p> Estado de Suscripción</p>
+                        <select class="form-select">
+                            <option> Elegir opcion</option>
+                            <option> Activa </option>
+                            <option> Inactiva </option>
+                            <option> Deshabilitada </option>
+                        </select>
+                        <label for="telefono" class="form-label"> ¿Quieres configurar el método de pago de suscripción?
+                        </label>
+
+
+                    </div>
+
+
+                    <button type="button" class="btn btn-dark center-block">Guardar Cambios</button>
+
+                </form>
+
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+</body>
+
+</html>
