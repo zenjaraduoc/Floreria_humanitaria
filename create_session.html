@@ -8,6 +8,8 @@
   <title>Create session</title>
   <link rel="stylesheet" href="css/diseño.css">
   <link rel="stylesheet" href="css/diseñocard.css">
+  <link rel="stylesheet" href="css/nabar.css">
+  <script src="js/Nabar.js"></script>
   <!-- Latest compiled and minified CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -16,29 +18,41 @@
 </head>
 
 <body class="body">
-  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="Floreria_humanitaria.html">
-        <img src="img/logo.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav" style="float: right;">
-          <li class="nav-item" style="float: right;">
-            <a class="nav-link" href="floreria.html">Quienes somos</a>
-          </li>
-          <li class="nav-item" style="float: right;">
-            <a class="nav-link" href="#">Productos</a>
-          </li>
-          <li class="nav-item" style="float: right;">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
+  <div id="sideNavigation" class="sidenav">
+    <a class="navbar-brand" href="Floreria_humanitaria.html">
+        <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+    </a>
+    <input type="text" placeholder="Buscar...">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="floreria.html">¿Quienes Somos?</a>
+    <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Perfil
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="#">Configuración de Perfil</a>
+            <a href="#">Estado de suscripción</a>
+            <a href="#">Historial de compras</a>
+            <a href="#">Cerrar Sesión</a>
+        </div>
     </div>
-  </nav>
+    <a href="#">Productos</a>
+    <a href="#">Contactanos</a>
+    <a href="logintrabajador.html">Entrar Como Trabajador</a>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+</div>
+<nav class="topnav">
+    <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+        </svg>
+    </a>
+</nav>
+
 
 
 
