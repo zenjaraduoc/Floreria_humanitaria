@@ -72,3 +72,9 @@ span.psw {
     height: auto;
   }
   }
+.derecha {
+  float:right;
+  width: 75%; 
+  margin-left: 12%; 
+  background-color: #04AA6D;
+}
