@@ -15,14 +15,18 @@
 }
 
 .medium-btn {
-    width: 70px;
-    height: 30px;
+    width: 20%;
+    height: 50px;
+    background-color: #cd0c0c;
+    float: right;
+    margin-right: 20px;
 }
 
 .big-btn {
     width: 40%;
     height: 20%;
     background-color: #cd0c0c;
+    margin:10px;
 }
 .big-btncenter {
     float: right;
