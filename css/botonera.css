@@ -17,7 +17,7 @@
 .medium-btn {
     width: 20%;
     height: 50px;
-    background-color: #cd0c0c;
+    background-color: black;
     float: right;
     margin-right: 20px;
 }
@@ -25,12 +25,12 @@
 .big-btn {
     width: 40%;
     height: 20%;
-    background-color: #cd0c0c;
+    background-color: blacks;
     margin:10px;
 }
 .big-btncenter {
     float: right;
     width: 40%;
     height: 20%;
-    background-color: #cd0c0c;
+    background-color: black;
 }
