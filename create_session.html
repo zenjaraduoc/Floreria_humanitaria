@@ -15,6 +15,7 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/miScript.js" ></script>
 </head>
 
 <body class="body">
@@ -68,8 +69,8 @@
           </div>
 
           <div class="mb-3 mt-md-3 ">
-            <label for="nombre" class="form-label">Nombre de Usuario</label>
-            <input type="text" class="form-control" id="nom" name="nombre" placeholder="Ingrese nombre" required>
+            <label for="nom" class="form-label">Nombre de Usuario</label>
+            <input type="text" class="form-control" id="nom" name="nom" placeholder="Ingrese nombre" required aria-describedby="helpId">
           </div>
 
           <div class="mb-3 mt-3  ">
@@ -120,7 +121,7 @@
           </div>
 
           <div class="mt-4">
-            <input type="submit" value="Crear Usuario" class="btn btn-success btn-md">
+            <input type="submit" value="Crear Usuario" onclick="crear()" class="btn btn-success btn-md">
           </div>
 
 
