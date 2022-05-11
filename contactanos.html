@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactanos</title>
+        <link rel="stylesheet" href="css/diseño.css">
+        <link rel="stylesheet" href="css/diseñocard.css">
+        <link rel="stylesheet" href="css/nabar.css">
+        <link rel="stylesheet" href="css/mapa.css">
+        <script src="js/Nabar.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/api.js"></script>
+    </head>
+    <body class="body">
+        <div id="sideNavigation" class="sidenav">
+            <a class="navbar-brand" href="Floreria_humanitaria.html">
+                <img src="img/logo.png" alt="Avatar Logo" style="width:100px;" alt="logo">
+            </a>
+            <input type="text" placeholder="Buscar...">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="floreria.html">¿Quienes Somos?</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Perfil
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="edit_personal.html">Configuración de Perfil</a>
+                    <a href="PagoSuscripcion.html">Estado de suscripción</a>
+                    <a href="HistorialdeCompras.html">Historial de compras</a>
+                    <a href="#">Cerrar Sesión</a>
+                </div>
+            </div>
+            <a href="#">Productos</a>
+            <a href="#">Contactanos</a>
+            <a href="logintrabajador.html">Entrar Como Trabajador</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <nav class="topnav">
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                </svg>
+            </a>
+        </nav>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #map {
+            height: 500px;
+            width: 60%;
+            margin-left: 20%;
+        }
+    </style>
+
+    <div class="d-flex justify-content-center" style="background-color:#fac638; margin-left: 20%; margin-right: 20%; margin-top: 10px;">
+     E-mail: Floreriahumanitaria@gmail.com
+     <br>
+     Número Telefonico: +56995252955
+     <br>
+     Dirección: Martín de Mujica 266, Concepción, Bío Bío   
+
+    </div>
+
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            var location = {lat:-36.78923311363644, lng: -73.05154091665084};
+            var map = new google.maps.Map(document.getElementById("map"),{
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAETd3jH_Ud3WSIkvwTOd4xePuY4V8y7X0&callback=initMap">
+    </script>
+</body>
