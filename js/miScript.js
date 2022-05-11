@@ -1,4 +1,13 @@
 function validar(){
-    let nom = document.getElementById("nomb").value;
-    alert("Datos cambiados")
+    confirm("Desa Guardar los Cambios?")
+}
+
+
+function borrar(){
+    alert("Datos borrados")
+}
+
+function crear(){
+    let nom =document.getElementById("nom").value;
+    alert("Bienvenido " + nom);
 }
