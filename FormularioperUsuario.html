@@ -63,7 +63,7 @@
                     <h4>Perfil del Usuario</h4>
                     <div class="mb-3 mt-3">
                         <label for="direccion" class="form-label">Direccion</label>
-                        <input type="direccion" class="form-control" id="nom" name="ape" placeholder="Direccion">
+                        <input type="direccion" class="form-control" id="nom" name="ape" placeholder="Direccion" required>
                     </div>
                     <div class="mb-3 mt-3">
                         <label for="codigo postal" class="form-label"> Codigo Postal</label>
@@ -121,8 +121,10 @@
                         </label>
                     </div>
 
-
-                    <button type="button" class="btn btn-dark center-block">Guardar Cambios</button>
+                    <div class="mt-4">
+                        <input type="submit" value="Guardar Cambios" onclick="validar()" name="btnvalidar"
+                            id="btnvalidar" class="btn btn-dark btn-md center-block">
+                    
 
                 </form>
 
