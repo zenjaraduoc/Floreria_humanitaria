@@ -50,33 +50,33 @@
   </nav>
 
 
-<form action="/action_page.php" method="post">
   <div class="text-center texto" style="background-color:#02ce31;width: 20%; margin-left: 40%;">
     TRABAJADORES
   </div>
-    <div class="logo">
+  <div class="logo">
     <img src="img/logo.png" alt="Logo" class="logo">
   </div>
-
-  <div class="container">
+<form action="./catalogo.html">
+  <div class="container" style="height: 30%; background-color:#fac638" >
     <label for="uname"><b>E-mail</b></label>
     <input type="text" placeholder="Ingrese E-mail" name="uname" required>
 
     <label for="psw"><b>Contraseña</b></label>
     <input type="password" placeholder="Ingrese Contraseña" name="psw" required>
-        
-    <button type="submit">Iniciar Sesión</button>
+    
+    <button id="iniciarsesion">Iniciar Sesión</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Recuerdame
     </label>
   </div>
-
-  <div class="container" style="background-color:#fac638">
-    <class="psw"> <a href="olvidecontra.html">¿Olvidaste La Contraseña?</a></class=>
+</form>
+  
+  <div class="container" style="height: 30%; background-color:#fac638" >
+     <a href="olvidecontra.html">¿Olvidaste La Contraseña?</a>
     <br>
-    <class="psw"> <a href="logincliente.html">¿Quieres entrar como cliente?</a></class=>
+     <a href="logincliente.html">¿Quieres entrar como cliente?</a>
     <br>
   </div>
-</form>
+  <script src="./js/botonerahref.js"></script>
 </body>
 </html>
