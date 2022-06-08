@@ -52,128 +52,136 @@
 
 <h2>Calatogo Productos</h2>
 
-    <div class="row container-fluid">
-        <div class="container-fluid mt-3 col-sm-4 p-3">
-            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-        </div>
-        <div class="container-fluid mb-3 mt-3 col-sm-4">
-            <label for="comuna" class="form-label">Filtro</label>
-            <select class="form-select" name="comuna">
-                <option>Nombre Producto</option>
-                <option>Codigo produto</option>
-                <option selected>Precio Mayor a Menor</option>
-                <option>Precio Menor a Mayor </option>
-            </select>
-        </div>
-    
-    
-        <div class="row container-fluid p-5 column">
-            <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
+<div class="row container-fluid">
+    <div class="container-fluid mt-3 col-sm-4 p-3">
+        <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    </div>
+    <div class="container-fluid mb-3 mt-3 col-sm-4">
+        <label for="comuna" class="form-label">Filtro</label>
+        <select class="form-select" name="comuna">
+            <option>Nombre Producto</option>
+            <option>Codigo produto</option>
+            <option selected>Precio Mayor a Menor</option>
+            <option>Precio Menor a Mayor </option>
+        </select>
+    </div>
+
+
+    <div class="row container p-5 column">
+        <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
                 <img src="img/fto3.png"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                </div>
+                <h5 class="card-title">Plantita Verde</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$19.00</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
-            <br>
+        </div>
+        <br>
             <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/flores.png"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">Set de Flores</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$2.50</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
+
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3 " style="width:18rem;">
                 <img src="img/flores.png"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">Set de Flores x3</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$3.10</p>
+                <a href="{% url 'carrito' %}" class="btn btn-success">Comprar</a>
+
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/macetas-plantas-interior-suculentas-Madera2Breciclada252C2BBiopl25C325A1stico2B32B1200px.jpg"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="..." style="height: 196.5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">Planta de Interior</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$4.02</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/venta 4.png"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="..." style="height: 196.5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">Arbol Bonsai Interior</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$6.59</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/fto floreria.jpeg"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="..." style="height: 196.5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">Set de Flores x4</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$6.70</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/macetas-plantas-interior-suculentas-Madera2Breciclada252C2BBiopl25C325A1stico2B32B1200px.jpg"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="..." style="height: 196.5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">plata de interio 2</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$7.32</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
-            <br>
-            <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
+        </div>
+        <br>
+        <div class="card mt-3 mb-3 mx-3" style="width:18rem;">
                 <img src="img/Planta.png"
-                    class="card-img-top" alt="...">
+                    class="card-img-top" alt="..." style="height: 196.5px;">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's
-                        content.</p>
-                    
-                </div>
+                <h5 class="card-title">plata de interio Gradne</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Precio</h6>
+                <p class="card-text">$10.00</p>
+                <a href="carrito.html" class="btn btn-success">Comprar</a>
             </div>
         </div>
     </div>
-    
+</div>
 
-    
-</body>
-</html>
+
+<ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
